@@ -1,18 +1,18 @@
 # able-dev
 
-**Release:** `0.1.1-beta`
+**Release:** `0.1.2-beta`
 
-`able-dev/0.1-beta` provides a shared development environment for the ABLE HPC system.
+`able-dev/0.1.2-beta` provides a shared development environment for the ABLE HPC system.
 ## Included
 
 | Tool | Version |
 | --- | --- |
-| code-server | `4.135.0` |
-| GitHub CLI | `2.100.0` |
+| code-server | `4.138.0` |
+| GitHub CLI | `2.101.0` |
 | yahsan2/gh-sub-issue | per-user `gh` extension |
-| OpenCode | `1.18.28` |
-| OpenAI Codex CLI | `0.153.3` |
-| Claude Code | `2.1.260` |
+| OpenCode | `1.18.32` |
+| OpenAI Codex CLI | `0.156.1` |
+| Claude Code | `2.1.281` |
 
 ## Install
 
@@ -22,19 +22,19 @@ From the repository root:
 
 ```bash
 mkdir -p logs
-sbatch able-dev/install-v0.1.1-beta.sh
+sbatch able-dev/install-v0.1.2-beta.sh
 ```
 
 The top-level installer consumes:
 
 ```text
-able-dev/install-v0.1.1-beta.sh
+able-dev/install-v0.1.2-beta.sh
 |
-├── code-server/install-v4.135.0.sh
-├── gh/install-v2.100.0.sh
-├── opencode/install-v1.18.28.sh
-├── codex/install-v0.153.3.sh
-└── claude-code/install-v2.1.260.sh
+├── code-server/install-v4.138.0.sh
+├── gh/install-v2.101.0.sh
+├── opencode/install-v1.18.32.sh
+├── codex/install-v0.156.1.sh
+└── claude-code/install-v2.1.281.sh
 ```
 
 `SLURM_SUBMIT_DIR` is used for repository discovery because Slurm executes the
@@ -43,11 +43,11 @@ submitted batch script from a spool location such as `/var/spool/slurmd`.
 Internally, the equivalent operations are:
 
 ```bash
-bash code-server/install-v4.134.0.sh
-bash gh/install-v2.98.0.sh
-bash opencode/install-v1.18.23.sh
-bash codex/install-v0.150.0.sh
-bash claude-code/install-v2.1.246.sh
+bash code-server/install-v4.138.0.sh
+bash gh/install-v2.101.0.sh
+bash opencode/install-v1.18.32.sh
+bash codex/install-v0.156.1.sh
+bash claude-code/install-v2.1.281.sh
 ```
 ## Use
 
@@ -55,7 +55,7 @@ After the installation job completes successfully:
 
 ```bash
 module use /projects/able/modulefiles
-module load able-dev/0.1.1-beta
+module load able-dev/0.1.2-beta
 ```
 
 Verify:

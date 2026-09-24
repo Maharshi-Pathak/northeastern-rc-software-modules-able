@@ -112,7 +112,13 @@
     'code-server/4.135.0',
     'vscode/1.135.0 (able)'
   );
-  
+
+  ensureOption(
+    'batch_connect_session_context_vscode_module',
+    'code-server/4.138.0',
+    'vscode/1.138.0 (able)'
+  );
+
   // Set the desired modules on the RC form
   setSelect(
     'batch_connect_session_context_conda_module',
@@ -122,8 +128,8 @@
 
   setSelect(
     'batch_connect_session_context_vscode_module',
-    'code-server/4.135.0',
-    'vscode/1.135.0 (able)'
+    'code-server/4.138.0',
+    'vscode/1.138.0 (able)'
   );
 
 // Set default compute resources
